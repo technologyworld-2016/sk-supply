@@ -1,0 +1,119 @@
+.section-E {
+  background: url("../images/secE-bg.png") no-repeat;
+  background-size: cover;
+  .sectionE-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    figure {
+      .secE-mobile {
+        position: absolute;
+        bottom: 30px;
+        left: 11%;
+      }
+    }
+
+    .secE-body {
+      margin: auto 0;
+      text-align: right;
+      padding: 265px 0;
+      h2 {
+        font-size: 47px;
+        line-height: 50px;
+        overflow: hidden;
+        font-weight: 600;
+        margin: 15px 0;
+      }
+      p {
+        color: #343649;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+//responsive
+
+@media only screen and (max-width: 1600px) {
+  .section-E {
+    .sectionE-wrapper {
+      figure {
+        .secE-mobile {
+          position: absolute;
+          bottom: -1%;
+          left: -2%;
+          padding: 6%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .section-E {
+    .sectionE-wrapper {
+      figure {
+        .secE-mobile {
+          position: absolute;
+          bottom: -3%;
+          left: -15%;
+          padding: 17%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .section-E {
+    .sectionE-wrapper {
+      figure {
+        .secE-mobile {
+          position: absolute;
+          bottom: -3%;
+          left: -26%;
+          padding: 28%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .section-E {
+    .sectionE-wrapper {
+      grid-template-columns: 1fr;
+      .secE-body {
+            padding: 20px 0px 200px;
+        h2,
+        p {
+          text-align: center;
+        }
+      }
+      figure {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        .secE-mobile {
+          position: inherit;
+          padding: 150px 0 0;
+          width: 55%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .section-E {
+    .sectionE-wrapper {
+      .secE-body {
+        h2 {
+          font-size: 26px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

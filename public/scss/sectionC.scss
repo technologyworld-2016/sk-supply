@@ -1,0 +1,117 @@
+.section-C {
+  background: url("../images/secC-bg.png") no-repeat;
+  background-size: cover;
+  .sectionC-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    figure {
+      .secC-mobile {
+        position: absolute;
+        bottom: 1240px;
+        left: -3%;
+      }
+    }
+
+    .secC-body {
+      margin: auto 0;
+      text-align: right;
+      padding: 265px 0;
+      h2 {
+        font-size: 47px;
+        line-height: 50px;
+        overflow: hidden;
+        font-weight: 600;
+        margin: 15px 0;
+      }
+      p {
+        color: #343649;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+//responsive
+
+@media only screen and (max-width: 1515px) {
+  .section-C {
+    .sectionC-wrapper {
+      figure {
+        .secC-mobile {
+          left: -16%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .section-C {
+    .sectionC-wrapper {
+      figure {
+        .secC-mobile {
+          position: absolute;
+          padding: 5%;
+          bottom: 22%;
+          left: -25%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .section-C {
+    .sectionC-wrapper {
+      .secC-body {
+        margin: auto 0;
+        text-align: right;
+        padding: 200px 0;
+      }
+      figure {
+        .secC-mobile {
+          position: absolute;
+          padding: 8%;
+          bottom: 36%;
+          left: -26%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .section-C {
+    .sectionC-wrapper {
+      grid-template-columns: 1fr;
+      .secC-body {
+        padding: 0 0 200px;
+        h2,
+        p {
+          text-align: center;
+        }
+      }
+      figure {
+        .secC-mobile {
+          position: inherit;
+          padding: 100px 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .section-C {
+    .sectionC-wrapper {
+      .secC-body {
+        h2{
+          font-size: 26px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

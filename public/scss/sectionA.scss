@@ -1,0 +1,178 @@
+.wrapper {
+  .section-A {
+    background: url(../images/sectionA-bg1.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0 300px 0;
+    .container {
+      .sectionA-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .intro-section {
+          display: grid;
+          grid-gap: 40px;
+          margin: 270px 0 0;
+          z-index: 2;
+          h2 {
+            font-size: 47px;
+            color: #0f84e3;
+            line-height: 50px;
+            overflow: hidden;
+            font-weight: 500;
+          }
+          p {
+            color: #fefefe;
+            font-size: 16px;
+            line-height: 28px;
+          }
+          .intro-btns {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            grid-gap: 30px;
+            .active-btn {
+              border-color: #417bc5 !important;
+              a {
+                color: #0f84e3 !important;
+              }
+            }
+            .sold-btn {
+              border-style: solid;
+              border-width: 2px;
+              border-color: #3c3f55;
+              border-radius: 11px;
+              width: 112px;
+              height: 55px;
+              background: transparent;
+              cursor: pointer;
+              a {
+                color: #3c3f55;
+                font-size: 13px;
+                font-weight: 800;
+              }
+            }
+            .find-btn {
+              border-radius: 11px;
+              background: transparent;
+              border-color: #3c3f55;
+              width: 182px;
+              height: 55px;
+              cursor: pointer;
+              a {
+                display: grid;
+                grid-template-columns: max-content 1fr;
+                margin: 0 25px;
+                justify-content: center;
+                align-items: center;
+                grid-gap: 15px;
+                color: #3c3f55;
+                font-size: 13px;
+                font-weight: 800;
+              }
+            }
+          }
+        }
+        figure {
+          z-index: 0;
+          .right-bg-img {
+            position: absolute;
+            right: -210px;
+            top: 230px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//responsive
+
+
+@media only screen and (max-width: 770px) {
+  .wrapper {
+    .section-A {
+      padding: 100px 0 200px 0;
+      .container {
+        .sectionA-wrapper {
+          .intro-section {
+            margin: 200px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .wrapper {
+    .section-A {
+      .container {
+        .sectionA-wrapper {
+          display: grid;
+          grid-template-columns: 1fr;
+          .intro-section {
+            .intro-btns {
+              grid-template-columns: max-content max-content;
+              grid-gap: 30px;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    .section-A {
+      padding: 50px 0 130px 0 !important;
+      .container {
+        .sectionA-wrapper {
+          .intro-section {
+            margin: 100px 0 0;
+            p {
+              text-align: center;
+              font-size: 14px;
+            }
+            h2 {
+              text-align: center;
+              font-size: 36px;
+            }
+            .intro-btns {
+              grid-template-columns: 1fr;
+              .sold-btn {
+                width: 100%;
+              }
+              .find-btn {
+                width: 100%;
+              }
+              .find-btn a {
+                grid-template-columns: max-content max-content;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    .section-A {
+      .container {
+        .sectionA-wrapper {
+          .intro-section {
+            margin: 70px 0 0;
+            h2 {
+              font-size: 26px !important;
+            }
+            p{
+              font-size: 12px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

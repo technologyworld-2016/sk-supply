@@ -1,0 +1,163 @@
+.header-section {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  .responsive-nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.85);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1111111;
+    .cross {
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/cross.svg");
+      background-size: 30px;
+      position: fixed;
+      z-index: 111111;
+      top: 20px;
+      right: 30px;
+      cursor: pointer;
+    }
+
+    & > nav {
+      margin: 70px 0 0;
+      ul {
+        li {
+          text-align: center;
+          display: block;
+          padding: 15px;
+          color: black;
+          cursor: pointer;
+          a {
+            color: #417bc5;
+            font-weight: 600;
+          }
+        }
+
+        li {
+          a {
+            .active {
+              color: #417bc5;
+            }
+          }
+        }
+
+        li {
+          a {
+            :hover {
+              color: #417bc5;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bars {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/bars.png");
+    background-size: 30px;
+    background-position: center;
+    position: absolute;
+    bottom: -25px;
+    right: 42px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+  }
+  .nav-ul {
+    padding: 15px;
+    margin: 0 auto auto 180px;
+    font-weight: 800;
+    .active {
+      a {
+        color: #417bc5;
+      }
+    }
+    li {
+      padding: 0 35px 0 0;
+
+      font-size: 13px;
+      a {
+        color: #2e3042;
+      }
+    }
+  }
+  .dashboard-button {
+    border-radius: 11px;
+    width: 162px;
+    height: 55px;
+    border-color: #417bc5;
+    background: transparent;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    place-content: space-evenly;
+    outline: none;
+    cursor: pointer;
+    a {
+      font-size: 13px;
+      color: #0f84e3;
+    }
+  }
+
+  .menu_icon {
+    width: 53px;
+  }
+}
+
+//responsive
+
+@media only screen and (max-width: 1240px) {
+  .container {
+    margin: 0 40px;
+    .header-section {
+      grid-gap: 30px;
+      .nav-ul {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 845px) {
+  .header-section {
+    grid-template-columns: 1fr max-content;
+    .nav-ul {
+      display: none;
+    }
+    .dashboard-button {
+      display: none;
+    }
+    .menu_icon {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .wrapper {
+    .section-A {
+      padding: 50px 0 300px 0;
+      .container {
+        .header-section {
+          figure {
+            a {
+              .logo-img {
+                width: 130px;
+              }
+            }
+          }
+          .menu_icon {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+}
