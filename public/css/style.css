@@ -21,7 +21,7 @@ Description : Web Development services
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   overflow-y: auto;
   overflow-x: hidden;
   font-family: myriad-pro, sans-serif; }
@@ -35,7 +35,7 @@ html,
 body {
   background: black;
   scroll-behavior: smooth;
-  font-family: Poppins-regular, sans-serif; }
+  font-family: Montserrat-regular, sans-serif; }
 
 button,
 input,
